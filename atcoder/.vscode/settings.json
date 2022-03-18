@@ -1,0 +1,26 @@
+{
+    // Code Runner
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "cd /home/atcoder && gcc -std=gnu11 -O2 -o ./bin/a.out $fileName -lm && ./bin/a.out",
+        "cpp": "cd /home/atcoder && g++ -std=gnu++17 -Wall -Wextra -O2 -o ./bin/a.out $fileName && ./bin/a.out",
+        "python": "cd /home/atcoder && /usr/local/python/bin/python3 $fileName 2>/dev/null",
+        "rust": "cd /home/atcoder && cp $fileName /usr/local/rust/src/main.rs && cd /usr/local/rust && cargo build --release --offline --quiet && cargo run"
+    },
+    // ac-library
+    "C_Cpp.default.includePath": [
+        "/lib/ac-library"
+    ],
+    // Python
+    "python.defaultInterpreterPath": "/usr/local/python/bin/python3",
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": false,
+    // 余分な改行とか空白の設定 (好みに合わせてください)
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+    },
+}
